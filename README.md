@@ -1,6 +1,15 @@
 ![Version](https://img.shields.io/badge/Version-0.3.1-blue.svg)
 ![MinGhostVersion](https://img.shields.io/badge/Min%20Ghost%20v.-%3E%3D%200.7.x-red.svg)
 
+## 写在前面
+
+这个项目是我 fork 来的，根据我的博客实际需求对其代码内容稍微改造，原地址在这：[ghostHunter](https://github.com/jamalneufeld/ghostHunter).
+
+我改造的内容大致如下(改造文件在 song 文件夹下面):
+
+1. 针对 Ghost 博客提供给使用者的 api，在增加搜索功能的同时，只接受 description、tag、id 三个参数，我觉得其他参数对于我的博客来说没用。改造后的 [demo](http://blog.songjz.cn) .
+2. 对于 Hexo 博客，变动稍大，因为原先的接口都变了，所以只能手动通过 JQuery 来传递 XML 文件并且解析 XML 文件，数据风格和 Ghost 一样，弊端就是 需要 Hexo 的搜索插件配合，即需要改变 Hexo 的 Search 插件。改造后的 [demo](http://yuren.space/blog).
+
 **This tool has just  been updated to work with Ghost's API. To quote the Ghost team, "The API is still under very (very) heavy development and subject to regular breaking changes."**
 
 **If performance is an issue, you should probably remove the "markdown" field from the index and the API query.**
